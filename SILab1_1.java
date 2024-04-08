@@ -8,7 +8,7 @@ public class SILab1_1 {
             if (el.length() % 2 != 0) {
                 result.add(el);
             }
-        }
+        }  
         return result;
     }
 
