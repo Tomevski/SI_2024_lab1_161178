@@ -6,8 +6,8 @@ public class SILab1_2 {
         StringBuilder sb = new StringBuilder();
         for (String el : list) {
             if (el.length() >= minLength) {
-                sb.append(el);
-            }
+               sb.append(el);
+            }  
         }
         return sb.toString();
     }
