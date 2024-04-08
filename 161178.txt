@@ -1,0 +1,85 @@
+C:\Users\Hristijan>mkdir SI_2024_lab1_161178
+
+C:\Users\Hristijan>cd SI_2024_lab1_161178
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git init
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git remote add origin https://github.com/Tomevski/SI_2024_lab1_161178
+
+C:\Users\Hristijan\SI_2024_lab1_161178>echo "Hristijan Tomevski 161178" > README.md
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add README.md
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Initial commit"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git status
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git status
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Add starter code"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push -f origin master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git branch bug1
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git branch bug2
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug1
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Fix wrong condition in filterOddLengthStrings"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug2
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "а Fix wrong condition in makeBigStringFrom"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug1
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Call method filterOddLengthStrings in main class"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug2
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Call method makeBigStringFrom in main class"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push origin --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git pull origin master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git merge bug1
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push origin master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug2
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git pull --rebase origin master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add .
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git mergetool
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push origin master
+
+
+
+
+
+

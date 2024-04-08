@@ -1,0 +1,196 @@
+C:\Users\Hristijan>mkdir SI_2024_lab1_161178
+
+C:\Users\Hristijan>cd SI_2024_lab1_161178
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git init
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git remote add origin https://github.com/Tomevski/SI_2024_lab1_161178
+
+C:\Users\Hristijan\SI_2024_lab1_161178>echo "Hristijan Tomevski 161178" > README.md
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add README.md
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Initial commit"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SILab1Main.java
+        SILab1_1.java
+        SILab1_2.java
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SILab1Main.java
+        new file:   SILab1_1.java
+        new file:   SILab1_2.java
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Add starter code"
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push -f origin master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git branch bug1
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git branch bug2
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Fix wrong condition in filterOddLengthStrings"
+[bug1 c6e2e51] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "а Fix wrong condition in makeBigStringFrom"
+[bug2 0256b1b] ╨░ Fix wrong condition in makeBigStringFrom
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Call method filterOddLengthStrings in main class"
+[bug1 af691b3] Call method filterOddLengthStrings in main class
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add --all
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m "Call method makeBigStringFrom in main class"
+[bug2 b53852f] Call method makeBigStringFrom in main class
+ 1 file changed, 1 insertion(+)
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push origin --all
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.27 KiB | 1.27 MiB/s, done.
+Total 12 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), completed with 4 local objects.
+To https://github.com/Tomevski/SI_2024_lab1_161178
+ * [new branch]      bug1 -> bug1
+ * [new branch]      bug2 -> bug2
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout master
+Switched to branch 'master'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git pull origin master
+From https://github.com/Tomevski/SI_2024_lab1_161178
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git merge bug1
+Auto-merging SILab1_1.java
+Merge made by the 'ort' strategy.
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 409 bytes | 409.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Tomevski/SI_2024_lab1_161178
+   14d6e6f..3fa1905  master -> master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git pull --rebase origin master
+From https://github.com/Tomevski/SI_2024_lab1_161178
+ * branch            master     -> FETCH_HEAD
+Auto-merging SILab1_2.java
+CONFLICT (content): Merge conflict in SILab1_2.java
+error: could not apply 0256b1b... ╨░ Fix wrong condition in makeBigStringFrom
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 0256b1b... ╨░ Fix wrong condition in makeBigStringFrom
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git add .
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit -m
+error: switch `m' requires a value
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit
+[detached HEAD 04530bf] ╨░ Fix wrong condition in makeBigStringFrom
+ 2 files changed, 6 insertions(+)
+ create mode 100644 git
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git checkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  04530bf ╨░ Fix wrong condition in makeBigStringFrom
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 04530bf
+
+Switched to branch 'master'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+tortoisemerge emerge vimdiff nvimdiff
+Merging:
+SILab1Main.java
+SILab1_2.java
+
+Normal merge conflict for 'SILab1Main.java':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (vimdiff):
+4 files to edit
+
+Normal merge conflict for 'SILab1_2.java':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (vimdiff): diffg LO
+4 files to edit
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git commit
+[master 685e031] Merge branch 'bug2'
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 528 bytes | 528.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Tomevski/SI_2024_lab1_161178
+   3fa1905..685e031  master -> master
+
+C:\Users\Hristijan\SI_2024_lab1_161178>git push origin master
+Everything up-to-date
+
+
+
+
+
